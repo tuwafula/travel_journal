@@ -20,7 +20,11 @@ const Card = (props) => {
             <GeoAltFill className="location" />
             {props.data.location}
             <span className="map--link">
-              <a href={props.data.googleMapsUrl} target="_blank">
+              <a
+                href={props.data.googleMapsUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
                 View on Google Maps
               </a>
             </span>
