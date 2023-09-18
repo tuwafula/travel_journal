@@ -1,0 +1,26 @@
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(182, 74, 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--container {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.nav--logo {
+  height: 30px;
+  padding-top: 3px;
+  color: whitesmoke;
+}
+
+.nav--title {
+  font-weight: bold;
+  color: whitesmoke;
+}

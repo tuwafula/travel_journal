@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
+import dataArrObjects from './components/data/data';
+
+import Navbar from './components/Navbar';
+import Card from './components/Card';
+
 function App() {
+  console.log(dataArrObjects);
+
+  const newTravelArr = dataArrObjects.map((obj) => {
+    return <Card key={obj.title} data={obj} />;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navbar />
+      {newTravelArr}
     </div>
   );
 }
